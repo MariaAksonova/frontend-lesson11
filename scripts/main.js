@@ -15,5 +15,8 @@ $(function (){
     $('.close').on('click', function () {
         popupWrap.fadeOut();
     });
+    $('.mobile-menu').on('click',function () {
+        $('.main-nav').toggle();
+    });
 });
 

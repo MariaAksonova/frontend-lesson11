@@ -309,6 +309,9 @@ footer .get-app {
 .popup .close {
     margin-top: 50px;
 }
+.mobile-menu {
+    display: none;
+}
 
 
 @media (min-width: 992px) and (max-width: 1199px){
@@ -356,9 +359,30 @@ footer .get-app {
     h3 {
         font: 24px "RobotoLight", sans-serif;
     }
+    .mobile-menu {
+        display: block;
+        background: url(../images/menu-icon.png) 50% no-repeat;
+        width: 29px;
+        height: 23px;
+        cursor: pointer;
+        float: right;
+    }
+    .main-nav li {
+    }
+    .main-nav {
+        display: none;
+        position: fixed;
+        top: 12%;
+        right: 0;
+        width: 40%;
+        height: 45%;
+        background-color: #2ecc71;
+        border: 1px solid #fff;
+        border-radius: 10px;
+    }
     .welcome {
         background: url("../images/bg-top.png") 50% 50% no-repeat;
-        height: 900px;
+        height: 830px;
         background-size: cover;
     }
     .about-app {
