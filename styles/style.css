@@ -368,6 +368,8 @@ footer .get-app {
         float: right;
     }
     .main-nav li {
+        width: 100%;
+        box-sizing: border-box;
     }
     .main-nav {
         display: none;
@@ -375,7 +377,6 @@ footer .get-app {
         top: 12%;
         right: 0;
         width: 40%;
-        height: 45%;
         background-color: #2ecc71;
         border: 1px solid #fff;
         border-radius: 10px;

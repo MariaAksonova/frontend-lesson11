@@ -18,5 +18,8 @@ $(function (){
     $('.mobile-menu').on('click',function () {
         $('.main-nav').toggle();
     });
+    $(window).on('scroll',function () {
+        $('.main-nav').hide();
+    });
 });
 
