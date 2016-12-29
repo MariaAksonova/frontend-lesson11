@@ -13,7 +13,7 @@
 h2 {
     font: 60px "RobotoRegular", sans-serif;
     color: #fff;
-    margin: 64px 0 36px 0;
+    margin: 40px 0 36px 0;
 }
 h3 {
     font: 48px "RobotoLight", sans-serif;
@@ -50,7 +50,7 @@ p {
     color: #fff;
 }
 .welcome .icon {
-    margin-top: 130px;
+    margin-top: 20px;
 }
 .main-nav {
     float: right;
@@ -89,7 +89,7 @@ p {
 }*/
 .welcome .app-store {
     display: flex;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .welcome .app-store li {
     margin-right: 28px;
