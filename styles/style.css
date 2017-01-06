@@ -13,7 +13,7 @@
 h2 {
     font: 60px "RobotoRegular", sans-serif;
     color: #fff;
-    margin: 64px 0 36px 0;
+    margin: 40px 0 36px 0;
 }
 h3 {
     font: 48px "RobotoLight", sans-serif;
@@ -33,7 +33,7 @@ p {
     line-height: 32px;
 }
 .container {
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 .welcome {
@@ -89,7 +89,7 @@ p {
 }*/
 .welcome .app-store {
     display: flex;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 .welcome .app-store li {
     margin-right: 28px;
@@ -316,10 +316,10 @@ footer .get-app {
 
 @media (min-width: 992px) and (max-width: 1199px){
     .container {
-        width: 1170px;
+        width: 970px;
     }
     .plan-your-diet .iphone-set {
-        width: 980px;
+        width: 960px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
