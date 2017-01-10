@@ -2,59 +2,49 @@
     font-family: "RobotoBold";
     src: url('../fonts/Roboto-Bold.ttf') format('truetype');
 }
-
 @font-face {
     font-family: "RobotoLight";
     src: url('../fonts/Roboto-Light.ttf') format('truetype');
 }
-
 @font-face {
     font-family: "RobotoRegular";
     src: url('../fonts/Roboto-Regular.ttf') format('truetype');
 }
-
 h2 {
     font: 60px "RobotoRegular", sans-serif;
     color: #fff;
     margin: 40px 0 36px 0;
 }
-
 h3 {
     font: 48px "RobotoLight", sans-serif;
     color: #5a5a5a;
 }
-
-h3 span {
+.green-text {
     color: #2ecc71;
-
 }
-
 h4 {
     font: 16px "RobotoBold", sans-serif;
     color: #2ecc71;
 }
-
 p {
     font: 18px "RobotoLight", sans-serif;
     color: #5a5a5a;
     line-height: 32px;
 }
-
 .container {
     max-width: 1170px;
     margin: 0 auto;
 }
-
 .welcome {
     background: url("../images/bg-top1.png") 50% 50% no-repeat;
     min-height: 100vh;
     background-size: cover;
+    padding-bottom: 80px;
     /*Здесь, как по мне, можно поставить padding-bottom: 50px;(это примерно, можно и больше).
     Так можно избежать того,
     что на разрешении экрана, например, 1015px две кнопки - google-play, app-store -
     обрезаются, залезая на часть белого фона у первой секции*/
 }
-
 /*.welcome > .container {
     min-height: calc(100vh - 44px);
     background-size: cover;
@@ -63,15 +53,12 @@ p {
     max-width: 636px;
     color: #fff;
 }
-
 .welcome .icon {
-    margin-top: 20px;
+    margin-top: 40px;
 }
-
 .main-nav {
     float: right;
 }
-
 .main-nav li {
     display: inline-block;
     padding: 10px 25px;
@@ -79,13 +66,11 @@ p {
     transition: 0.1s ease-out;
     border-radius: 30px;
 }
-
 .main-nav a {
     color: #fff;
     text-decoration: none;
     font: 18px "RobotoRegular", sans-serif;
 }
-
 .main-nav li:hover {
     /*Лучше еще добавить префикс к этому свойству)
     -webkit-border-radius: 30px;*/
@@ -93,20 +78,16 @@ p {
     border: 1px solid #fff;
     background-color: #fff;
 }
-
 .main-nav li:hover a, .main-nav a:hover {
     color: #2ecc71;
 }
-
 .main-header {
     padding: 40px 0;
     overflow: hidden;
 }
-
 .main-header .logo {
     float: left;
 }
-
 /*.iphone {
     position: absolute;
     right: 0;
@@ -115,17 +96,14 @@ p {
 .welcome .app-store {
      /*здесь тож лучше не забывать о префиксах)*/
     display: flex;
-    margin-top: 40px;
+    margin-top: 60px;
 }
-
 .welcome .app-store li {
     margin-right: 28px;
 }
-
 .about-app > .container {
     position: relative;
 }
-
 .app-pros {
     border-radius: 50%;
     width: 460px;
@@ -136,7 +114,6 @@ p {
     margin-left: 116px;
     margin-bottom: 216px;
 }
-
 .app-pros li {
     position: absolute;
     border-radius: 50%;
@@ -145,43 +122,36 @@ p {
     border: 2px solid #fff;
     background-color: #eee;
 }
-
 .sound {
     background: url("../images/sound.png") 50% 50% no-repeat;
     top: -24px;
     right: 30%;
 }
-
 .days {
     background: url("../images/days.png") 50% 50% no-repeat;
     top: 14%;
     right: 4%;
 }
-
 .growth {
     background: url("../images/growth.png") 50% 50% no-repeat;
     top: calc(50% - 29px);
     right: -29px;
 }
-
 .favorite {
     background: url("../images/favorite.png") 50% 50% no-repeat;
     top: 74%;
     right: 4%;
 }
-
 .interface {
     background: url("../images/interface.png") 50% 50% no-repeat;
     top: calc(100% - 42px);
     right: 30%;
 }
-
 .iphone-multicolors {
     position: absolute;
     top: -136px;
     left: -40px;
 }
-
 .app-pros li:hover {
     transform: scale(1.1);
     background-color: #2ecc71;
@@ -189,13 +159,11 @@ p {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
     cursor: pointer;
 }
-
 .app-pros li.active, .app-pros li.active:hover {
     transform: scale(1.2);
     background-color: #2ecc71;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
 }
-
 .app-text {
     position: absolute;
     right: 0;
@@ -203,61 +171,49 @@ p {
     left: 650px;
     bottom: 0;
 }
-
 .app-text li {
     display: none;
     position: absolute;
     right: 0;
     top: 50%;
 }
-
 .app-text li.active {
     display: block;
 }
-
 .app-text h3 {
     margin-bottom: 28px;
 }
-
 .plan-your-diet {
     background: url("../images/bg-mid.png") 50% no-repeat;
     background-size: cover;
     padding-top: 100px;
     text-align: center;
 }
-
 .plan-your-diet h3 {
     margin-bottom: 28px;
 }
-
 .plan-your-diet p {
     max-width: 848px;
     margin: 0 auto;
 }
-
 .plan-your-diet .iphone-set {
     text-align: center;
     margin-top: 100px;
 }
-
 .manage-meal-time {
     padding: 140px 0;
 }
-
 .manage-meal-time h3 {
     margin-bottom: 28px;
 }
-
 .manage-meal-time p {
     max-width: 462px;
 }
-
 .manage-meal-time .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .manage-meal-time .meal-table {
     width: 420px;
     height: 108px;
@@ -272,63 +228,52 @@ p {
     transition: all .5s ease-out;
     padding: 0 20px;
 }
-
 .manage-meal-time .meal-table:hover {
     transform: scale(1.2);
 }
-
 .meal-table .weight-calories {
     font: 12px "RobotoBold", sans-serif;
     color: #2ecc71;
     background: url("../images/elipsa.png") 32% no-repeat;
 }
-
 .meal-table .weight {
     margin-right: 20px;
 }
-
 .meal-table .about-meal {
     font: 12px "RobotoLight", sans-serif;
     color: #b4b4b4;
     margin: 5px 0;
 }
-
 .meal-table .meal {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 .meal-table .meal-time {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
 }
-
 .meal-time .time {
     font: 25px "RobotoBold", sans-serif;
     color: #2ecc71;
 }
-
 .meal-time .pm {
     font: 16px "RobotoBold", sans-serif;
     color: #b4b4b4;
 }
-
 footer {
     background: url("../images/bg-bottom.png") 50% no-repeat;
     background-size: cover;
     padding: 100px 0;
     text-align: center;
 }
-
 footer h3, footer p {
     color: #fff;
     margin: 0 auto 30px;
     max-width: 848px;
 }
-
 footer .get-app {
     color: #2ecc71;
     font: 18px "RobotoBold", sans-serif;
@@ -336,7 +281,6 @@ footer .get-app {
     background-color: #fff;
     border-radius: 50px;
 }
-
 .popup-wrap {
     display: none;
     position: fixed;
@@ -346,7 +290,6 @@ footer .get-app {
     bottom: 0;
     background: rgba(0, 0, 0, 0.3);
 }
-
 .popup {
     position: absolute;
     top: 20%;
@@ -360,11 +303,9 @@ footer .get-app {
     justify-content: center;
     align-items: center;
 }
-
 .popup h3 {
     color: #2ecc71;
 }
-
 .popup .close, .popup .get-app {
     color: #2ecc71;
     font: 18px "RobotoBold", sans-serif;
@@ -373,11 +314,9 @@ footer .get-app {
     border-radius: 50px;
     width: 200px;
 }
-
 .popup .close {
     margin-top: 50px;
 }
-
 .mobile-menu {
     display: none;
 }
@@ -386,9 +325,17 @@ footer .get-app {
     .container {
         width: 970px;
     }
-
     .plan-your-diet .iphone-set {
         width: 960px;
+    }
+    .welcome p {
+        max-width: 600px;
+        color: #fff;
+    }
+    .meal-table .weight-calories {
+        font: 12px "RobotoBold", sans-serif;
+        color: #2ecc71;
+        background: url("../images/elipsa.png") 32% no-repeat;
     }
 }
 
@@ -396,66 +343,50 @@ footer .get-app {
     .container {
         width: 750px;
     }
-
     .welcome .icon {
         margin-top: 80px;
     }
-
     h2 {
         font: 54px "RobotoRegular", sans-serif;
         margin: 20px 0;
     }
-
     h3 {
         font: 48px "RobotoLight", sans-serif;
     }
-
     p {
         font: 22px "RobotoLight", sans-serif;
         line-height: 34px;
+        max-width: 562px;
     }
-
     .main-nav a {
         font: 20px "RobotoRegular", sans-serif;
     }
-
     .welcome {
         min-height: 950px;
     }
-
-    .welcome p {
-        max-width: 562px;
-    }
-
     .about-app {
         padding-bottom: 60px;
         text-align: center;
         max-width: 600px;
     }
-
     .app-text {
         position: static;
         margin-top: 20px;
     }
-
     .app-text li {
         position: static;
     }
-
     .plan-your-diet .iphone-set {
         margin-top: 40px;
         width: 760px;
     }
-
     .manage-meal-time {
         padding: 70px 0;
     }
-
     .manage-meal-time p {
         max-width: 760px;
         margin-bottom: 50px;
     }
-
     .manage-meal-time .container {
         text-align: center;
         display: flex;
@@ -463,33 +394,32 @@ footer .get-app {
         justify-content: space-around;
         align-items: center;
     }
-
     .manage-meal-time .meal-table {
         width: 420px;
         height: 108px;
         padding: 0 20px;
     }
+    .meal-table .weight-calories {
+        font: 12px "RobotoBold", sans-serif;
+        color: #2ecc71;
+        background: url("../images/elipsa.png") 40% no-repeat;
+    }
 }
-
 @media (max-width: 767px) {
     .container {
         width: auto;
         padding: 0 28px;
     }
-
     .welcome .icon {
         margin-top: -20px;
     }
-
     h2 {
         font: 36px "RobotoRegular", sans-serif;
         margin: 20px 0;
     }
-
     h3 {
         font: 24px "RobotoLight", sans-serif;
     }
-
     .mobile-menu {
         display: block;
         background: url(../images/menu-icon.png) 50% no-repeat;
@@ -498,12 +428,10 @@ footer .get-app {
         cursor: pointer;
         float: right;
     }
-
     .main-nav li {
         width: 100%;
         box-sizing: border-box;
     }
-
     .main-nav {
         display: none;
         position: fixed;
@@ -514,18 +442,15 @@ footer .get-app {
         border: 1px solid #fff;
         border-radius: 10px;
     }
-
     .welcome {
         background: url("../images/bg-top.png") 50% 50% no-repeat;
         height: 830px;
         background-size: cover;
     }
-
     .about-app {
         padding-bottom: 30px;
         text-align: center;
     }
-
     .app-pros {
         position: static;
         border-radius: 0;
@@ -536,7 +461,6 @@ footer .get-app {
         display: flex;
         justify-content: space-between;
     }
-
     .app-pros li {
         position: static;
         display: inline-block;
@@ -544,46 +468,36 @@ footer .get-app {
         height: 50px;
         margin: 0;
     }
-
     .app-pros li.active, .app-pros li.active:hover {
         transform: scale(1.1);
     }
-
     .iphone-multicolors {
         display: none;
     }
-
     .app-text {
         position: static;
-        margin-top: 20px;
+        margin-top: 16px;
     }
-
     .app-text li {
         position: static;
     }
-
     .plan-your-diet .iphone-set {
         margin-top: 40px;
         width: 100%;
     }
-
     .plan-your-diet {
         padding-bottom: 0;
         padding-top: 60px;
     }
-
     .manage-meal-time {
         padding: 60px 0;
     }
-
     .manage-meal-time h3 {
         margin-bottom: 28px;
     }
-
     .manage-meal-time p {
         max-width: 462px;
     }
-
     .manage-meal-time .container {
         text-align: center;
         display: flex;
@@ -591,41 +505,50 @@ footer .get-app {
         justify-content: space-around;
         align-items: center;
     }
-
     .manage-meal-time .meal-table {
         width: 320px;
         height: 100px;
         padding: 0 10px 0 4px;
     }
-
     .manage-meal-time .meal-table:hover {
         transform: none;
     }
-
     .meal-table .weight-calories {
         font: 12px "RobotoBold", sans-serif;
         color: #2ecc71;
         background: url("../images/elipsa.png") 40% no-repeat;
     }
-
     footer {
         padding: 60px 0;
     }
-
     .popup {
         top: calc(50% - 130px);
         left: calc(50% - 130px);
         width: 260px;
         height: 260px;
     }
-
     .popup .close {
         margin-top: 20px;
     }
 }
-
 @media (min-width: 768px) {
     .main-nav {
         display: block !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: auto;
+        padding: 0 15px;
+    }
+    .manage-meal-time .meal-table {
+        width: 290px;
+        height: 100px;
+        padding: 0 4px 0 4px;
+    }
+    .meal-table img {
+        width: 80px;
+        height: auto;
     }
 }
