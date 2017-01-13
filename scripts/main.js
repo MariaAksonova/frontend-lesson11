@@ -16,10 +16,9 @@ $(function (){
         popupWrap.fadeOut();
     });
     $('.mobile-menu').on('click',function () {
-        $('.main-nav').toggle();
+        $('.main-nav').slideToggle();
     });
     $(window).on('scroll',function () {
         $('.main-nav').hide();
     });
 });
-
